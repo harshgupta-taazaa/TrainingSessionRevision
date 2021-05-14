@@ -65,18 +65,18 @@ namespace ProductCatalog
                     break;
                 case "b":
                     DataService UsingDataService = new DataService(FilePath);
-                    UsingDataService.ShowTheAvailableDataInCSVfile();
+                    UsingDataService.ShowTheAvailableDataInCSVfile("Product");
                     DisplayManager();
                     break;
                 case "c":
                     DataService UsingDataServicee = new DataService(FilePath);
-                    UsingDataServicee.DeleteItemInCSVFile();
+                    UsingDataServicee.DeleteItemInCSVFile("Product");
                     DisplayManager();
 
                     break;
                 case "d":
                     DataService UsingDataServiceee = new DataService(FilePath);
-                    UsingDataServiceee.DeleteItemInCSVFile();
+                    UsingDataServiceee.SearchItemInCSVFile("Product");
                     DisplayManager();
                     break;
                 default:
@@ -108,16 +108,24 @@ namespace ProductCatalog
             switch (category.ToLower())
             {
                 case "a":
+                    DataService UsingDataServic = new DataService(FilePath);
+                    UsingDataServic.AddTheDataInCSVfile();
                     DisplayManager();
                     break;
                 case "b":
+                    DataService UsingDataService = new DataService(FilePath);
+                    UsingDataService.ShowTheAvailableDataInCSVfile("Category");
                     DisplayManager();
 
                     break;
                 case "c":
+                    DataService UsingDataServicee = new DataService(FilePath);
+                    UsingDataServicee.DeleteItemInCSVFile("Category");
                     DisplayManager();
                     break;
                 case "d":
+                    DataService UsingDataServiceee = new DataService(FilePath);
+                    UsingDataServiceee.SearchItemInCSVFile("Product");
                     DisplayManager();
                     break;
                 default:
