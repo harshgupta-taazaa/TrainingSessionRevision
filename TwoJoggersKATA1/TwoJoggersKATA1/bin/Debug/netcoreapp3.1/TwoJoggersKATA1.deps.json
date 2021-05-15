@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "TwoJoggersKATA1/1.0.0": {
+        "runtime": {
+          "TwoJoggersKATA1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TwoJoggersKATA1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
