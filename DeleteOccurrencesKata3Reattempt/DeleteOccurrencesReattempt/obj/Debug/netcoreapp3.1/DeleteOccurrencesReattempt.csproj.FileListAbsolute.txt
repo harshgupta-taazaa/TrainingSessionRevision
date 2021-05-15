@@ -1,0 +1,13 @@
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrencesKata3Reattempt\DeleteOccurrencesReattempt\bin\Debug\netcoreapp3.1\DeleteOccurrencesReattempt.exe
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrencesKata3Reattempt\DeleteOccurrencesReattempt\bin\Debug\netcoreapp3.1\DeleteOccurrencesReattempt.deps.json
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrencesKata3Reattempt\DeleteOccurrencesReattempt\bin\Debug\netcoreapp3.1\DeleteOccurrencesReattempt.runtimeconfig.json
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrencesKata3Reattempt\DeleteOccurrencesReattempt\bin\Debug\netcoreapp3.1\DeleteOccurrencesReattempt.runtimeconfig.dev.json
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrencesKata3Reattempt\DeleteOccurrencesReattempt\bin\Debug\netcoreapp3.1\DeleteOccurrencesReattempt.dll
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrencesKata3Reattempt\DeleteOccurrencesReattempt\bin\Debug\netcoreapp3.1\DeleteOccurrencesReattempt.pdb
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrencesKata3Reattempt\DeleteOccurrencesReattempt\obj\Debug\netcoreapp3.1\DeleteOccurrencesReattempt.csprojAssemblyReference.cache
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrencesKata3Reattempt\DeleteOccurrencesReattempt\obj\Debug\netcoreapp3.1\DeleteOccurrencesReattempt.AssemblyInfoInputs.cache
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrencesKata3Reattempt\DeleteOccurrencesReattempt\obj\Debug\netcoreapp3.1\DeleteOccurrencesReattempt.AssemblyInfo.cs
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrencesKata3Reattempt\DeleteOccurrencesReattempt\obj\Debug\netcoreapp3.1\DeleteOccurrencesReattempt.csproj.CoreCompileInputs.cache
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrencesKata3Reattempt\DeleteOccurrencesReattempt\obj\Debug\netcoreapp3.1\DeleteOccurrencesReattempt.dll
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrencesKata3Reattempt\DeleteOccurrencesReattempt\obj\Debug\netcoreapp3.1\DeleteOccurrencesReattempt.pdb
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrencesKata3Reattempt\DeleteOccurrencesReattempt\obj\Debug\netcoreapp3.1\DeleteOccurrencesReattempt.genruntimeconfig.cache
