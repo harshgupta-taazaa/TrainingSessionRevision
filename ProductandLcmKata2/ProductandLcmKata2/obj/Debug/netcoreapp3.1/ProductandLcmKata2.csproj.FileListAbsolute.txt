@@ -1,0 +1,13 @@
+C:\Users\S S INFOTECH\source\repos\ProductandLcmKata2\ProductandLcmKata2\bin\Debug\netcoreapp3.1\ProductandLcmKata2.exe
+C:\Users\S S INFOTECH\source\repos\ProductandLcmKata2\ProductandLcmKata2\bin\Debug\netcoreapp3.1\ProductandLcmKata2.deps.json
+C:\Users\S S INFOTECH\source\repos\ProductandLcmKata2\ProductandLcmKata2\bin\Debug\netcoreapp3.1\ProductandLcmKata2.runtimeconfig.json
+C:\Users\S S INFOTECH\source\repos\ProductandLcmKata2\ProductandLcmKata2\bin\Debug\netcoreapp3.1\ProductandLcmKata2.runtimeconfig.dev.json
+C:\Users\S S INFOTECH\source\repos\ProductandLcmKata2\ProductandLcmKata2\bin\Debug\netcoreapp3.1\ProductandLcmKata2.dll
+C:\Users\S S INFOTECH\source\repos\ProductandLcmKata2\ProductandLcmKata2\bin\Debug\netcoreapp3.1\ProductandLcmKata2.pdb
+C:\Users\S S INFOTECH\source\repos\ProductandLcmKata2\ProductandLcmKata2\obj\Debug\netcoreapp3.1\ProductandLcmKata2.csprojAssemblyReference.cache
+C:\Users\S S INFOTECH\source\repos\ProductandLcmKata2\ProductandLcmKata2\obj\Debug\netcoreapp3.1\ProductandLcmKata2.AssemblyInfoInputs.cache
+C:\Users\S S INFOTECH\source\repos\ProductandLcmKata2\ProductandLcmKata2\obj\Debug\netcoreapp3.1\ProductandLcmKata2.AssemblyInfo.cs
+C:\Users\S S INFOTECH\source\repos\ProductandLcmKata2\ProductandLcmKata2\obj\Debug\netcoreapp3.1\ProductandLcmKata2.csproj.CoreCompileInputs.cache
+C:\Users\S S INFOTECH\source\repos\ProductandLcmKata2\ProductandLcmKata2\obj\Debug\netcoreapp3.1\ProductandLcmKata2.dll
+C:\Users\S S INFOTECH\source\repos\ProductandLcmKata2\ProductandLcmKata2\obj\Debug\netcoreapp3.1\ProductandLcmKata2.pdb
+C:\Users\S S INFOTECH\source\repos\ProductandLcmKata2\ProductandLcmKata2\obj\Debug\netcoreapp3.1\ProductandLcmKata2.genruntimeconfig.cache
