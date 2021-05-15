@@ -1,0 +1,13 @@
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrences\DeleteOccurrences\bin\Debug\netcoreapp3.1\DeleteOccurrences.exe
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrences\DeleteOccurrences\bin\Debug\netcoreapp3.1\DeleteOccurrences.deps.json
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrences\DeleteOccurrences\bin\Debug\netcoreapp3.1\DeleteOccurrences.runtimeconfig.json
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrences\DeleteOccurrences\bin\Debug\netcoreapp3.1\DeleteOccurrences.runtimeconfig.dev.json
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrences\DeleteOccurrences\bin\Debug\netcoreapp3.1\DeleteOccurrences.dll
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrences\DeleteOccurrences\bin\Debug\netcoreapp3.1\DeleteOccurrences.pdb
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrences\DeleteOccurrences\obj\Debug\netcoreapp3.1\DeleteOccurrences.csprojAssemblyReference.cache
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrences\DeleteOccurrences\obj\Debug\netcoreapp3.1\DeleteOccurrences.AssemblyInfoInputs.cache
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrences\DeleteOccurrences\obj\Debug\netcoreapp3.1\DeleteOccurrences.AssemblyInfo.cs
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrences\DeleteOccurrences\obj\Debug\netcoreapp3.1\DeleteOccurrences.csproj.CoreCompileInputs.cache
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrences\DeleteOccurrences\obj\Debug\netcoreapp3.1\DeleteOccurrences.dll
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrences\DeleteOccurrences\obj\Debug\netcoreapp3.1\DeleteOccurrences.pdb
+C:\Users\S S INFOTECH\source\repos\DeleteOccurrences\DeleteOccurrences\obj\Debug\netcoreapp3.1\DeleteOccurrences.genruntimeconfig.cache
