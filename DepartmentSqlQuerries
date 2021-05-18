@@ -1,0 +1,215 @@
+-- Database: DepartmentStore
+
+-- DROP DATABASE "DepartmentStore";
+
+CREATE DATABASE "DepartmentStore"
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'English_United States.1252'
+    LC_CTYPE = 'English_United States.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+	
+	
+	
+CREATE TABLE Staffs(
+staff_id SERIAL PRIMARY KEY,
+	FirstName VARCHAR(15) NOT NULL,
+	LastName VARCHAR(15) NOT NULL,
+	Duties VARCHAR(20) ,
+	PhoneNo CHAR(10)
+);
+
+SELECT * FROM Staffs
+
+CREATE TABLE Products(
+ProductId SERIAL PRIMARY KEY,
+	ProductName VARCHAR(20) NOT NULL,
+	BrandName VARCHAR (20) NOT NULL,
+	Manufacturer VARCHAR(20) NOT NULL,
+	ProductCode VARCHAR(5) NOT NULL,
+	CostPrice NUMERIC,
+	SellingPrice NUMERIC,
+	CategoryId INT REFERENCES Categories(Id)
+
+);
+
+SELECT * FROM Products;
+
+
+CREATE TABLE Categories(
+Id SERIAL PRIMARY KEY,
+	Category Varchar(20)
+);
+
+SELECT * FROM Categories
+
+ 
+CREATE TABLE Inventories(
+ProductId INT REFERENCES Products(ProductId),
+	InStock BOOLEAN,
+	Quantity NUMERIC
+);
+
+SELECT * FROM Inventories;
+
+CREATE TABLE Suppliers(
+SupplierId SERIAL PRIMARY KEY,
+	SupplierName VARCHAR(30) NOT NULL,
+	PhoneNo CHAR(10) UNIQUE,
+	Email VARCHAR(30) UNIQUE,
+	City VARCHAR(20),
+	ProductOrder Varchar(5)  ,
+	ProductOrderAmount NUMERIC(8,2)
+);
+
+SELECT * FROM Suppliers
+
+INSERT INTO staff(first_name,last_name,duties,phone_no)
+VALUES('Rahul','Soni','manage counter','2312343214')
+
+INSERT INTO staffs(FirstName,LastName,Duties,PhoneNo)
+VALUES('Rahul','Soni','manage counter','2312343214'),('lucky','singh','collect product','0923433564'),
+('utkarsh','singh','manage godown','3203209325'),
+('jay','singh','manage counter','7324335643'),
+('nikhil','singh','manage godown','8653433564'),
+('karan','singh','manage counter','9023433564'),
+('areeb','singh','collect product','9923433564');
+
+
+-- ***********QUERRIES on staff TABLE****************
+
+SELECT * FROM Staffs WHERE FirstName='lucky';
+
+SELECT * FROM Staffs WHERE PhoneNo='9923433564';
+
+SELECT * FROM Staffs WHERE LastName='singh'OR PhoneNo ='2312343214'; 
+
+SELECT * FROM Staffs WHERE Duties='manage godown';
+
+
+-- ***********************END***********************
+
+
+
+INSERT INTO Categories (Category)
+VALUES('stationary'),('dairy'),('chocolate'),('cosmetics'),('toys');
+
+
+SELECT * FROM Categories;
+
+INSERT INTO Products(ProductName,BrandName,Manufacturer,ProductCode,CostPrice,SellingPrice ,CategoryId)
+VALUES('pen','cello','xyz','pn','8','9','1'),
+('copy','classmate','jaj','cpy','48','55','1'),('5-star','dairy','kkkZ','choco','55','60','3'),('cream','lotus','sasa','cr','125','140','4'),
+('milk','amul','amul','mk','25','28','2'),('spiner','abcd','kaalk','spin','95','110','5'),('teddy-bear','local','kskl','tdy','1000','1100','5'),
+('curd','gyan','gyan','crd','15','20','2');
+
+
+SELECT * FROM Products
+
+
+SELECT * FROM Inventories
+
+
+INSERT INTO Inventories(ProductID,InStock,Quantity)VALUES
+('1','true','10'),('2','true','45'),('3','false','0'),('4','false','0'),('5','true','93'),('6','true','8'),
+('7','true','145'),('8','false','0');
+
+
+
+
+-- ***********QUERRIES on Product Table****************
+
+SELECT * FROM Products
+select * from categories
+
+SELECT * FROM Products WHERE ProductName ='pen';
+
+Select Products.ProductName , Categories.Category FROM Products
+join Categories On Products.CategoryId=Categories.Id;
+
+SELECT Products.ProductName,Inventories.InStock FROM Products
+Join Inventories Using(ProductId);
+
+SELECT * FROM Products WHERE CostPrice>10;
+SELECT * FROM Products WHERE CostPrice<50;
+SELECT * FROM Products WHERE SellingPrice>10;
+SELECT * FROM Products WHERE SellingPrice<100;
+SELECT * FROM Products WHERE CostPrice BETWEEN 10 AND 50;
+
+SELECT Products.ProductName,Inventories.InStock FROM Products
+Join Inventories Using(ProductId)
+WHERE Inventories.InStock='false';
+
+Select Products.ProductName ,Categories.Category FROM Products
+join Categories On Products.CategoryId=categories.Id
+WHERE Categories.Category='dairy'
+Order BY Products.ProductName;
+
+Select Products.ProductName , Categories.Category , Inventories.Quantity ,Inventories.InStock FROM Products
+join Categories On Products.CategoryId=categories.Id
+join Inventories Using(ProductId)
+ORDER BY  Inventories.Quantity DESC;
+
+
+-- *************************END************************
+
+Select * from Suppliers
+
+
+ CREATE TABLE ProductSupplier (
+ ProductId INT REFERENCES Products(ProductId),
+ SupplierId INT REFERENCES Suppliers(SupplierId),
+	 PRIMARY KEY (ProductId,SupplierID)	 
+ );
+ SELECT * FROM Productsupplier
+ 
+ALTER TABLE suppliers ALTER COLUMN ProductOrder Type Varchar(30)
+
+Select * from Suppliers
+
+INSERT INTO Suppliers(SupplierName,PhoneNo,Email,City,ProductOrder,ProductOrderAmount,DateOfDeleivery)
+VALUES ('neel','9076876709','neel@gmail.com','raipur','pen','5003','2021-03-01'),
+('ram','8876876709','ram@gmail.com','basti','milk','8900','2020-05-23'),
+('saifh','9871176709','saifh@gmail.com','lucknow','teddy','9889','2021-04-09'),
+('pankaj','9812345678','pankaj@gmail.com','delhi','milk','6587','2020-04-02'),
+('rohit','0987654321','rohit@gmail.com','agra','pen','3242','2021-02-12'),
+('shayam','8979865467','shayam@gmail.com','ayodhya','chocolate','1234','2021-03-26'),
+('gajju','4465763987','gajju@gmail.com','ayodhya','curd','500','2021-01-01');
+
+
+INSERT INTO ProductSupplier (ProductId,SupplierId)
+VAlues('1','1'),('1','2'),('1','3'),('1','4'),('1','5'),('1','6'),('1','7');
+
+
+
+SELECT p.ProductName , s.SupplierName FROM Products p
+INNER JOIN ProductSupplier l ON (p.Productid=l.SupplierId)
+inner join Suppliers s ON (s.SupplierId=l.SupplierId);
+
+SELECT p.ProductName , s.SupplierName, s.ProductOrder FROM Products p
+INNER JOIN ProductSupplier l ON (p.Productid=l.SupplierId)
+inner join Suppliers s ON (s.SupplierId=l.SupplierId)
+Where s.ProductOrder='pen';
+
+
+SELECT p.ProductName , s.SupplierName, s.ProductOrder FROM Products p
+INNER JOIN ProductSupplier l ON (p.Productid=l.SupplierId)
+inner join Suppliers s ON (s.SupplierId=l.SupplierId)
+Where s.SupplierName='rohit';
+
+
+SELECT p.ProductName , s.SupplierName, s.ProductOrder FROM Products p
+INNER JOIN ProductSupplier l ON (p.Productid=l.SupplierId)
+inner join Suppliers s ON (s.SupplierId=l.SupplierId)
+Where s.DateOfDeleivery>'2021-04-01';
+
+
+SELECT p.ProductName , s.SupplierName, s.ProductOrder FROM Products p
+INNER JOIN ProductSupplier l ON (p.Productid=l.SupplierId)
+inner join Suppliers s ON (s.SupplierId=l.SupplierId)
+Where s.DateOfDeleivery<'2021-04-01';
+
+
+
