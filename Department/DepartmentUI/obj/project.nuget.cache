@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "NXL0CMXAWOO5nc+lLR3DWbgoaPjs3XDSrJlYYI4U4zWgz0cMA0rtbNtUp7nU6aFB17BfO8x5yrOuoBN4jpv7ug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\S S INFOTECH\\source\\repos\\Department\\DepartmentUI\\DepartmentUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.15\\microsoft.entityframeworkcore.3.1.15.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.15\\microsoft.entityframeworkcore.abstractions.3.1.15.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.15\\microsoft.entityframeworkcore.analyzers.3.1.15.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.11\\microsoft.entityframeworkcore.relational.3.1.11.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.15\\microsoft.extensions.caching.abstractions.3.1.15.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.15\\microsoft.extensions.caching.memory.3.1.15.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.15\\microsoft.extensions.configuration.3.1.15.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.15\\microsoft.extensions.configuration.abstractions.3.1.15.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.15\\microsoft.extensions.configuration.binder.3.1.15.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.15\\microsoft.extensions.dependencyinjection.3.1.15.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.15\\microsoft.extensions.dependencyinjection.abstractions.3.1.15.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.extensions.logging\\3.1.15\\microsoft.extensions.logging.3.1.15.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.15\\microsoft.extensions.logging.abstractions.3.1.15.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.extensions.options\\3.1.15\\microsoft.extensions.options.3.1.15.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.15\\microsoft.extensions.primitives.3.1.15.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\npgsql\\4.1.8\\npgsql.4.1.8.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\3.1.11\\npgsql.entityframeworkcore.postgresql.3.1.11.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
+    "C:\\Users\\S S INFOTECH\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

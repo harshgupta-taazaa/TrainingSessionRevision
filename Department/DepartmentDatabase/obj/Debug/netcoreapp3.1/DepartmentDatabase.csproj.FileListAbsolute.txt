@@ -1,0 +1,12 @@
+C:\Users\S S INFOTECH\source\repos\Department\DepartmentDatabase\bin\Debug\netcoreapp3.1\DepartmentDatabase.deps.json
+C:\Users\S S INFOTECH\source\repos\Department\DepartmentDatabase\bin\Debug\netcoreapp3.1\DepartmentDatabase.runtimeconfig.json
+C:\Users\S S INFOTECH\source\repos\Department\DepartmentDatabase\bin\Debug\netcoreapp3.1\DepartmentDatabase.runtimeconfig.dev.json
+C:\Users\S S INFOTECH\source\repos\Department\DepartmentDatabase\bin\Debug\netcoreapp3.1\DepartmentDatabase.dll
+C:\Users\S S INFOTECH\source\repos\Department\DepartmentDatabase\bin\Debug\netcoreapp3.1\DepartmentDatabase.pdb
+C:\Users\S S INFOTECH\source\repos\Department\DepartmentDatabase\obj\Debug\netcoreapp3.1\DepartmentDatabase.csprojAssemblyReference.cache
+C:\Users\S S INFOTECH\source\repos\Department\DepartmentDatabase\obj\Debug\netcoreapp3.1\DepartmentDatabase.AssemblyInfoInputs.cache
+C:\Users\S S INFOTECH\source\repos\Department\DepartmentDatabase\obj\Debug\netcoreapp3.1\DepartmentDatabase.AssemblyInfo.cs
+C:\Users\S S INFOTECH\source\repos\Department\DepartmentDatabase\obj\Debug\netcoreapp3.1\DepartmentDatabase.csproj.CoreCompileInputs.cache
+C:\Users\S S INFOTECH\source\repos\Department\DepartmentDatabase\obj\Debug\netcoreapp3.1\DepartmentDatabase.dll
+C:\Users\S S INFOTECH\source\repos\Department\DepartmentDatabase\obj\Debug\netcoreapp3.1\DepartmentDatabase.pdb
+C:\Users\S S INFOTECH\source\repos\Department\DepartmentDatabase\obj\Debug\netcoreapp3.1\DepartmentDatabase.genruntimeconfig.cache
