@@ -1,6 +1,7 @@
 ﻿using DepartmentDatabase.DatabaseContext;
 using DepartmentDatabase.Entities;
 using System;
+using System.Linq;
 
 namespace DepartmentUI
 {
@@ -35,10 +36,19 @@ namespace DepartmentUI
             //_context.ProductPrice.Add(new ProductPrice { ProductCostPrice = 20, ProductSellingPrice = 25, productId = 2 });
             //_context.ProductPrice.Add(new ProductPrice { ProductCostPrice = 150, ProductSellingPrice = 200, productId = 1 });
 
-            _context.Address.Add(new Address { StaffAddress = "12/3 balak pur ", State = "Up", City = "Faizabad", PinCode = "224001", StaffId = 5 });
-            _context.Address.Add(new Address { StaffAddress = "335 rekabganj  ", State = "Up", City = "Ayodhya", PinCode = "224002", StaffId = 6 });
-            _context.Address.Add(new Address { StaffAddress = "green city bbd ", State = "Up", City = "Lucknow", PinCode = "224222", StaffId = 7 });
-            _context.SaveChanges();
+            //_context.Address.Add(new Address { StaffAddress = "12/3 balak pur ", State = "Up", City = "Faizabad", PinCode = "224001", StaffId = 5 });
+            //_context.Address.Add(new Address { StaffAddress = "335 rekabganj  ", State = "Up", City = "Ayodhya", PinCode = "224002", StaffId = 6 });
+            //_context.Address.Add(new Address { StaffAddress = "green city bbd ", State = "Up", City = "Lucknow", PinCode = "224222", StaffId = 7 });
+            //_context.SaveChanges();
+
+            var querry1 =  from Staff in _context.Set<Staff>()
+                           join Role in _context.Set<Role>() on Staff.RoleId equals Role.Id
+                           join Address in _context.Set<Address>() on Staff.Id equals Address.StaffId
+                           select new { Staff, Address, Role };
+            foreach (var a in querry1)
+            {
+                Console.WriteLine($"{a.Staff.FirstName}, {a.Address.StaffAddress} ,{a.Role.StaffRole}");
+            }
         }
     }
 }

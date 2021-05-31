@@ -14,7 +14,9 @@ namespace DepartmentApi.Model
         public string Salary { get; set; }
 
         //public int RoleId { get; set; }
-        //public Role Role { get; set; }
-        public List<RoleModel> Roles { get; set; }
+        public RoleModel Role { get; set; }
+        
+        //public AddressModel Address { get; set; }
+      //public List<RoleModel> Roles { get; set; }
     }
 }

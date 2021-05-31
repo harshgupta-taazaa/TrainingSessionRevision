@@ -33,7 +33,7 @@ namespace DepartmentDatabase.DatabaseContext
             modelBuilder.Entity<Staff>().Property(s => s.Gender).HasMaxLength(10).IsRequired();
             modelBuilder.Entity<Staff>().HasOne(s => s.Role).WithMany(g => g.Staff).HasForeignKey(s => s.RoleId);
 
-            
+           
             modelBuilder.Entity<Address>().HasKey(s => s.Id);
             modelBuilder.Entity<Address>().Property(s => s.StaffAddress).HasMaxLength(100);
             modelBuilder.Entity<Address>().Property(s => s.State).HasMaxLength(20);

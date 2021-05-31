@@ -15,6 +15,7 @@ namespace DepartmentApi
             this.CreateMap<Staff, StaffModel>().ReverseMap();
             this.CreateMap<Role, RoleModel>().ReverseMap();
 
+            this.CreateMap<Category, CategoryModel>().ReverseMap();
             this.CreateMap<Product, ProductModel>().ReverseMap();
         }
     }

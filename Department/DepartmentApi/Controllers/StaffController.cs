@@ -28,16 +28,21 @@ namespace DepartmentApi.Controllers
         }
         DepartmentContext _context = new DepartmentContext();
         [HttpGet]
-        public IActionResult GetStaff() {
+        public ActionResult<List<StaffModel>> GetStaff() {
 
-            try { 
-           
+            try
+            {
 
-            //    var staff = _context.Staff.ToList();
-            //    List<StaffModel> staffDetail = _mapper.Map<List<StaffModel>>(staff);
-            //    return Ok(staffDetail);
+
+                //var staff = _context.Staff.ToList();
+                //List<StaffModel> staffDetail = _mapper.Map<List<StaffModel>>(staff);
+                //return Ok(staffDetail);
                 var query = _context.Staff.Include(r => r.Role).ToList();
-
+                //var querry1= (from Staff in _context.Set<Staff>()
+                //             join Role in _context.Set<Role>() on Staff.RoleId equals Role.Id
+                //             join Address in _context.Set<Address>() on Staff.Id equals Address.StaffId
+                //             select new { Staff, Address,Role }).ToList();
+                //var querry = _context.Staff.Include(r=>r.Role).Include(a=>a.)
                 return Ok(_mapper.Map<List<StaffModel>>(query));
 
 
@@ -48,13 +53,28 @@ namespace DepartmentApi.Controllers
             }
         }
 
-        [HttpGet("{firstname}")]
-        public IActionResult GetStaffDetails(string firstName)
+        [HttpGet("search")]
+        public ActionResult<List<StaffModel>> GetStaffDetails(string firstName ,string salary)
         {
             try
             {
-                var data = _context.Staff.Where(s => s.FirstName == firstName).ToList();
+                if (salary == null)
+                {
+                    var dataa = _context.Staff.Where(s => s.FirstName == firstName).Include(r => r.Role).ToList();
+                    List<StaffModel> Staffdetails = _mapper.Map<List<StaffModel>>(dataa);
+                    if (!Staffdetails.Any()) return NotFound();
+                    return Ok(Staffdetails);
+                }
+                else  if (firstName==null)
+                {
+                    var dataaa = _context.Staff.Where(s => s.Salary == salary).Include(r => r.Role).ToList();
+                    List<StaffModel> Staffdetailss= _mapper.Map<List<StaffModel>>(dataaa);
+                    if (!Staffdetailss.Any()) return NotFound();
+                    return Ok(Staffdetailss);
+                }
+                var data = _context.Staff.Where(s => s.FirstName == firstName).Where(s=>s.Salary==salary).Include(r => r.Role).ToList();
                 List<StaffModel> Staffdetail = _mapper.Map<List<StaffModel>>(data);
+                if (!Staffdetail.Any()) return NotFound();
                 return Ok(Staffdetail);
             }
             catch (Exception)
